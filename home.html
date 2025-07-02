@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Classification</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url("C:\Users\sydul\Downloads\fabric 1\static1"); /* Place your image in static/ */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            color: white;
+            text-align: center;
+        }
+
+        .container {
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 40px;
+            border-radius: 15px;
+            width: 400px;
+            margin: 100px auto;
+        }
+
+        h1 {
+            margin-bottom: 30px;
+        }
+
+        input[type="file"] {
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        input[type="submit"] {
+            padding: 10px 25px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        img {
+            margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #fff;
+        }
+    </style>
+</head>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Upload Fabric Image</title>
+</head>
+<body>
+    <h1>Upload a Fabric Image</h1>
+    <form action="/predict" method="POST" enctype="multipart/form-data">
+        <input type="file" name="ump_image" accept="image/*" required>
+        <br><br>
+        <input type="submit" value="Classification Image">
+    </form>
+</body>
+</html>
