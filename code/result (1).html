@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Result - Pattern Sense</title>
+</head>
+<body>
+    <h2>Prediction Result</h2>
+    <img src="{{ url_for('static', filename=image) }}" width="300">
+    <p><strong>Predicted Class:</strong> {{ label }}</p>
+    <a href="/">Back</a>
+</body>
+</html>
